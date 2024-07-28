@@ -1,19 +1,29 @@
 # Terminal
 
-## The theme is no longer maintained, but can still be used
+## Welcome to Hugo Theme re-Terminal!
 
-Even if the repository is archived you can still use the theme, fork it, download it, expand it, etc. Remember that each Hugo theme is a module that can be modified to match your needs. The theme is fully "open" and it depends only on the internal engines implemented in Hugo.
+Hello! I'm thrilled to announce that we've received a brand new fork of Hugo Theme Terminal, now officially known as Hugo Theme Re-Terminal!
 
-The theme brings many useful features thanks to [all people that contributed to it](https://github.com/panr/hugo-theme-terminal/graphs/contributors) (I want to thank you all!). At the time of archiving the theme has reached 9th place on the [official Hugo Themes list](https://themes.gohugo.io/). This is huge! Thanks to you!
+
+As the maintainer, I'm excited to share that this theme will continue to evolve and receive updates with new features. Why? Because I use it myself! You can bet your last byte that any changes I make will be thoroughly tested and refined for real-world use.
+
+
+This fork aims to breathe new life into the original Terminal theme, which was once a popular choice among Hugo enthusiasts. Unfortunately, it had been neglected over time. But no more! With re-Terminal, we're committed to keeping the spirit of the original alive while adding fresh perspectives and innovations.
+
+
+In the coming weeks and months, you can expect to see new features, and bug fixes. We'll also be actively seeking feedback from our community to ensure that this theme continues to meet your needs and exceed your expectations.
+
+
+So, welcome aboard! I'm excited to have you join us on this journey as we shape the future of Hugo Theme re-Terminal together. Let's get started!
 
 ----
 
-![Terminal](https://github.com/panr/hugo-theme-terminal/blob/master/images/screenshot.png?raw=true)
+![Terminal](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/images/screenshot.png?raw=true)
 
 
-### DEMO - https://hugo-terminal.now.sh/
+~~### DEMO - https://hugo-terminal.now.sh/~~ outdated
 
-### ⚠️ The theme needs at least Hugo **Extended** v0.90.x.
+### ⚠️ The theme needs at least Hugo **Extended** v0.129.0.
 
 ---
 
@@ -91,7 +101,7 @@ A custom syntax highlighting based on PrismJS. All you need to do is to wrap you
 
 ## How to start
 
-You can download the theme manually by going to [https://github.com/panr/hugo-theme-terminal.git](https://github.com/panr/hugo-theme-terminal.git) and pasting it to `themes/terminal` in your root directory.
+You can download the theme manually by going to [https://github.com/mirus-ua/hugo-theme-re-terminal.git](https://github.com/mirus-ua/hugo-theme-re-terminal.git) and pasting it to `themes/re-terminal` in your root directory.
 
 You can also choose **one of the 3 possibilities** to install the theme:
 
@@ -109,7 +119,7 @@ You can also choose **one of the 3 possibilities** to install the theme:
 # you fetch the theme module.
 #
 # hugo mod init [your website/module name]
-hugo mod get github.com/panr/hugo-theme-terminal/v3
+hugo mod get github.com/mirus-ua/hugo-theme-re-terminal/v1
 ```
 
 and in your config file add:
@@ -117,9 +127,9 @@ and in your config file add:
 ```toml
 [module]
   # this is needed when you fetch the theme as a submodule to your repo.
-  # replacements = "github.com/panr/hugo-theme-terminal -> themes/terminal"
+  # replacements = "github.com/mirus-ua/hugo-theme-re-terminal -> themes/re-terminal"
 [[module.imports]]
-  path = 'github.com/panr/hugo-theme-terminal/v3'
+  path = 'github.com/mirus-ua/hugo-theme-re-terminal/v1'
 ```
 
 Keep in mind that the theme by default won't show up in the `themes` directory. This means that you are using the theme as it was on the repository at the moment you fetched it. Your local `go.sum` file keeps all the references. Read more about Hugo Modules in the [official documentation](https://gohugo.io/hugo-modules/).
@@ -127,18 +137,18 @@ Keep in mind that the theme by default won't show up in the `themes` directory. 
 ### Install theme locally
 
 ```bash
-git clone https://github.com/panr/hugo-theme-terminal.git themes/terminal
+git clone https://github.com/mirus-ua/hugo-theme-re-terminal.git themes/re-terminal
 ```
 
-This will clone the repository directly to the `themes/terminal` directory.
+This will clone the repository directly to the `themes/re-terminal` directory.
 
 ### Install theme as a submodule
 
 ```bash
-git submodule add -f https://github.com/panr/hugo-theme-terminal.git themes/terminal
+git submodule add -f https://github.com/mirus-ua/hugo-theme-re-terminal.git themes/re-terminal
 ```
 
-This will install the repository as a sumbodule in the `themes/terminal` directory.
+This will install the repository as a sumbodule in the `themes/re-terminal` directory.
 
 ⚠️ If you encounter any issues with:
 
@@ -146,12 +156,12 @@ This will install the repository as a sumbodule in the `themes/terminal` directo
 Error: module "terminal" not found; either add it as a Hugo Module or store it in "[...your custom path]/themes".: module does not exist
 ```
 
-then please try to remove `theme = "terminal"` from your config file.
+then please try to remove `theme = "re-terminal"` from your config file.
 
 ## How to run your site
 
 ```bash
-hugo server -t terminal
+hugo server -t re-terminal
 ```
 
 and go to `localhost:1313` in your browser. From now on all the changes you make will go live, so you don't need to refresh your browser every single time.
@@ -165,7 +175,7 @@ baseurl = "/"
 languageCode = "en-us"
 # Add it only if you keep the theme in the `themes` directory.
 # Remove it if you use the theme as a remote Hugo Module.
-theme = "terminal"
+theme = "re-terminal"
 paginate = 5
 
 [params]
@@ -226,7 +236,7 @@ paginate = 5
   site = ""
 
 [languages]
-  [languages.en]
+  [languages.en.params]
     languageName = "English"
     title = "Terminal"
     subtitle = "A simple, retro theme for Hugo"
@@ -261,9 +271,9 @@ paginate = 5
   # In case you would like to make changes to the theme and keep it locally in you repository,
   # uncomment the line below (and correct the local path if necessary).
   # --
-  # replacements = "github.com/panr/hugo-theme-terminal -> themes/terminal"
+  # replacements = "github.com/mirus-ua/hugo-theme-re-terminal -> themes/re-terminal"
 [[module.imports]]
-  path = 'github.com/panr/hugo-theme-terminal'
+  path = 'github.com/mirus-ua/hugo-theme-re-terminal'
 ```
 
 to `config.toml` file in your Hugo root directory and change params fields. In case you need, here's [a YAML version](https://gist.github.com/panr/9eeea6f595c257febdadc11763e3a6d1).
@@ -272,23 +282,23 @@ to `config.toml` file in your Hugo root directory and change params fields. In c
 
 ## Post archetype
 
-See the default `post` file params supported by the theme — https://github.com/panr/hugo-theme-terminal/blob/master/archetypes/posts.md
+See the default `post` file params supported by the theme — https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/archetypes/posts.md
 
 ## Add-ons
 
-- **Comments** — for adding comments to your blog posts please take a look at `layouts/partials/comments.html` https://github.com/panr/hugo-theme-terminal/blob/master/layouts/partials/comments.html.
-- **Extended Head** — please take a look at `layouts/partials/extended_head.html` https://github.com/panr/hugo-theme-terminal/blob/master/layouts/partials/extended_head.html
-- **Extended Footer** — please take a look at `layouts/partials/extended_footer.html` https://github.com/panr/hugo-theme-terminal/blob/master/layouts/partials/extended_footer.html
+- **Comments** — for adding comments to your blog posts please take a look at `layouts/partials/comments.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/layouts/partials/comments.html.
+- **Extended Head** — please take a look at `layouts/partials/extended_head.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/layouts/partials/extended_head.html
+- **Extended Footer** — please take a look at `layouts/partials/extended_footer.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/layouts/partials/extended_footer.html
 
 ## How to edit the theme <a id="how-to-edit" />
 
-If you are using as a remote Hugo Module (you don't have the theme files in the `theme/terminal`) and you have to override only some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
+If you are using as a remote Hugo Module (you don't have the theme files in the `theme/re-terminal`) and you have to override only some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
 
-If you have the theme files in the theme directory, then you can directly edit anything in the theme, you just have to go to `themes/terminal` and modify the files. No compilation step needed.
+If you have the theme files in the theme directory, then you can directly edit anything in the theme, you just have to go to `themes/re-terminal` and modify the files. No compilation step needed.
 
 ## Found a bug? <a id="bug" />
 
-If you spot any bugs, please use [Issue Tracker](https://github.com/panr/hugo-theme-terminal/issues) or create a new [Pull Request](https://github.com/panr/hugo-theme-terminal/pulls) to fix the issue.
+If you spot any bugs, please use [Issue Tracker](https://github.com/mirus-ua/hugo-theme-re-terminal/issues) or create a new [Pull Request](https://github.com/mirus-ua/hugo-theme-re-terminal/pulls) to fix the issue.
 
 ## New cool idea or feature? <a id="feature" />
 
@@ -309,11 +319,13 @@ Sounds OK? Cool, let's rock! 🤘
 
 ## Terminal theme user?
 
-I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/panr/hugo-theme-terminal/blob/master/USERS.md)! 🤗
+I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/USERS.md)! 🤗
 
 
 ## License
 
 Copyright © 2019-2022 Radosław Kozieł ([@panr](https://twitter.com/panr))
 
-The theme is released under the MIT License. Check the [original theme license](https://github.com/panr/hugo-theme-terminal/blob/master/LICENSE.md) for additional licensing information.
+Copyright © 2024-now Mirus
+
+The theme is released under the MIT License. Check the [original theme license](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/LICENSE.md) for additional licensing information.

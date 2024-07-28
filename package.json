@@ -1,7 +1,7 @@
 {
-  "name": "terminal",
-  "version": "3.1.0",
-  "author": "Radosław Kozieł <@panr> <radoslaw.koziel@gmail.com>",
+  "name": "re-terminal",
+  "version": "1.0.0",
+  "author": "Mirus <@mirus-ua> <mirusim@gmail.com>",
   "main": "index.js",
   "license": "MIT",
   "scripts": {

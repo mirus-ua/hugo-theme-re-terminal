@@ -1,4 +1,7 @@
-# Meet the users of Terminal theme!
+# Meet the users of re-Terminal theme!
+- https://nebrowser.com/ **Mirus** (Team/Tech Lead)
+
+# Meet the users of OG Terminal theme!
 
 - https://xicode.se **magistern** (Teacher)
 - https://devmaster64.com **devmaster64** (Software Developer)
