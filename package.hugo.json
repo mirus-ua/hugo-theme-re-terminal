@@ -31,7 +31,7 @@
   },
   "license": "MIT",
   "main": "index.js",
-  "name": "terminal",
+  "name": "re-terminal",
   "scripts": {
     "test": "echo 'Test'"
   },

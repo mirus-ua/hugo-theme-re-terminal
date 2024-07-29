@@ -153,7 +153,7 @@ This will install the repository as a sumbodule in the `themes/re-terminal` dire
 ⚠️ If you encounter any issues with:
 
 ```bash
-Error: module "terminal" not found; either add it as a Hugo Module or store it in "[...your custom path]/themes".: module does not exist
+Error: module "re-terminal" not found; either add it as a Hugo Module or store it in "[...your custom path]/themes".: module does not exist
 ```
 
 then please try to remove `theme = "re-terminal"` from your config file.
@@ -238,7 +238,7 @@ paginate = 5
 [languages]
   [languages.en.params]
     languageName = "English"
-    title = "Terminal"
+    title = "re-Terminal"
     subtitle = "A simple, retro theme for Hugo"
     owner = ""
     keywords = ""
@@ -254,7 +254,7 @@ paginate = 5
     words = "words"
 
     [languages.en.params.logo]
-      logoText = "Terminal"
+      logoText = "re-Terminal"
       logoHomeLink = "/"
 
     [languages.en.menu]
