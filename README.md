@@ -18,7 +18,7 @@ So, welcome aboard! I'm excited to have you join us on this journey as we shape 
 
 ----
 
-![Terminal](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/images/screenshot.png?raw=true)
+![Terminal](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/images/screenshot.png?raw=true)
 
 
 ~~### DEMO - https://hugo-terminal.now.sh/~~ outdated
@@ -282,13 +282,17 @@ to `config.toml` file in your Hugo root directory and change params fields. In c
 
 ## Post archetype
 
-See the default `post` file params supported by the theme — https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/archetypes/posts.md
+See the default `post` file params supported by the theme — https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/archetypes/posts.md
 
 ## Add-ons
 
-- **Comments** — for adding comments to your blog posts please take a look at `layouts/partials/comments.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/layouts/partials/comments.html.
-- **Extended Head** — please take a look at `layouts/partials/extended_head.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/layouts/partials/extended_head.html
-- **Extended Footer** — please take a look at `layouts/partials/extended_footer.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/layouts/partials/extended_footer.html
+- **Comments** — for adding comments to your blog posts please take a look at `layouts/partials/comments.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/comments.html.
+- **Comments counter** — for adding comments counter to your blog posts please take a look at `layouts/partials/comments_counter.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/comments_counter.html.
+- **Extended Head** — please take a look at `layouts/partials/extended_head.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/extended_head.html
+- **Extended Footer** — please take a look at `layouts/partials/extended_footer.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/extended_footer.html
+
+### Low-level add-ons
+- **Post base** — Renders bare minimum of posts' content. For motivation and details take a look at https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/extended_footer.html
 
 ## How to edit the theme <a id="how-to-edit" />
 
@@ -319,7 +323,7 @@ Sounds OK? Cool, let's rock! 🤘
 
 ## Terminal theme user?
 
-I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/USERS.md)! 🤗
+I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/USERS.md)! 🤗
 
 
 ## License
@@ -328,4 +332,4 @@ Copyright © 2019-2022 Radosław Kozieł ([@panr](https://twitter.com/panr))
 
 Copyright © 2024-now Mirus
 
-The theme is released under the MIT License. Check the [original theme license](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/LICENSE.md) for additional licensing information.
+The theme is released under the MIT License. Check the [original theme license](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/LICENSE.md) for additional licensing information.

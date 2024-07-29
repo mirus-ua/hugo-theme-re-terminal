@@ -1,0 +1,17 @@
+<!--
+To add comments section, please create `layouts/partials/comments_counter.html` in your
+Hugo directory and insert:
+
+you can use the snippet bellow to add disqus comments counter to your posts
+
+<span>
+  <a class="disqus_comments" href="{{ .Permalink }}#disqus_thread">
+    <span 
+    class="disqus-comment-count"
+    data-disqus-url="{{ with .Params.disqus_url }}{{ . }}{{ else }}{{ .Permalink }}{{ end }}">O {{ $.Site.Params.comments | default "comments" }}</span>
+    {{ .Site.Params.noCounter }}
+  </a>
+</span>
+
+or whatever comment engine you want -> https://gohugo.io/content-management/comments/#readout
+-->

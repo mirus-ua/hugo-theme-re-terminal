@@ -1,6 +1,6 @@
 name = "re-terminal"
 license = "MIT"
-licenselink = "https://github.com/mirus-ua/hugo-theme-re-terminal/blob/master/LICENSE.md"
+licenselink = "https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/LICENSE.md"
 description = "A simple, retro theme for Hugo."
 homepage = "https://github.com/mirus-ua/hugo-theme-re-terminal/"
 tags = [
