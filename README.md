@@ -1,14 +1,14 @@
-# Terminal
+# re-Terminal
 
 ## Welcome to Hugo Theme re-Terminal!
 
-Hello! I'm thrilled to announce that we've received a brand new fork of Hugo Theme Terminal, now officially known as Hugo Theme Re-Terminal!
+Hello! I'm thrilled to announce that we've received a brand new fork of Hugo Theme re-Terminal, now officially known as Hugo Theme Re-Terminal!
 
 
 As the maintainer, I'm excited to share that this theme will continue to evolve and receive updates with new features. Why? Because I use it myself! You can bet your last byte that any changes I make will be thoroughly tested and refined for real-world use.
 
 
-This fork aims to breathe new life into the original Terminal theme, which was once a popular choice among Hugo enthusiasts. Unfortunately, it had been neglected over time. But no more! With re-Terminal, we're committed to keeping the spirit of the original alive while adding fresh perspectives and innovations.
+This fork aims to breathe new life into the original re-Terminal theme, which was once a popular choice among Hugo enthusiasts. Unfortunately, it had been neglected over time. But no more! With re-Terminal, we're committed to keeping the spirit of the original alive while adding fresh perspectives and innovations.
 
 
 In the coming weeks and months, you can expect to see new features, and bug fixes. We'll also be actively seeking feedback from our community to ensure that this theme continues to meet your needs and exceed your expectations.
@@ -321,7 +321,7 @@ This will help keeping the theme close to its roots, and also allow anyone who w
 
 Sounds OK? Cool, let's rock! 🤘
 
-## Terminal theme user?
+## re-Terminal theme user?
 
 I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/USERS.md)! 🤗
 
