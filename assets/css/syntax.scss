@@ -117,9 +117,9 @@ pre[class*="language-"] {
 }
 
 .code-toolbar {
-  $code-margin: 40px;
+  --code-margin: 40px;
 	position: relative;
-	margin: $code-margin 0;
+	margin: var(--code-margin) 0;
 	padding: 20px;
 	border: 1px solid rgba(255, 255, 255, .1);
 
@@ -127,7 +127,7 @@ pre[class*="language-"] {
 	+ .highlight,
 	+ .highlight .code-toolbar {
 		border-top: 0;
-		margin-top: calc(-1 * $code-margin);
+		margin-top: calc(-1 * var(--code-margin));
 	}
 
 	pre, code {

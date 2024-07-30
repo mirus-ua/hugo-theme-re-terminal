@@ -1,11 +1,11 @@
 @mixin menu {
+  --shadow-color: rgba(var(--background), 0.2);
   display: none;
   flex-direction: column;
-  $shadow-color: rgba(var(--background), 0.2);
-  $shadow: 0 10px $shadow-color, -10px 10px $shadow-color, 10px 10px $shadow-color;
+  --shadow: 0 10px var(--shadow-color), -10px 10px var(--shadow-color), 10px 10px var(--shadow-color);
   position: absolute;
   background: var(--background);
-  box-shadow: $shadow;
+  box-shadow: var(--shadow);
   color: white;
   border: 2px solid;
   margin: 0;
