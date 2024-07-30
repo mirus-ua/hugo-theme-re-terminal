@@ -19,6 +19,8 @@
           {{- with .Params.Author -}}
             <span class="post-author">{{- . -}}</span>
           {{- end -}}
+          <!-- comments counter -->
+          {{ partial "comments_counter.html" . }}
         </div>
 
         {{ if .Params.tags }}

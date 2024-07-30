@@ -1,5 +1,5 @@
 {
-  "author": "Radosław Kozieł <@panr> <radoslaw.koziel@gmail.com>",
+  "author": "Mirus <@mirus-ua> <mirusim@gmail.com>",
   "browserslist": [
     "last 2 versions",
     ">1%",
@@ -35,5 +35,5 @@
   "scripts": {
     "test": "echo 'Test'"
   },
-  "version": "2.1.0"
+  "version": "1.1.1"
 }
