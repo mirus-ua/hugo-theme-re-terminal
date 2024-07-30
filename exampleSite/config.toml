@@ -1,7 +1,16 @@
-baseurl = "https://example.com/"
+baseurl = "https://re-terminal.nebrowser.com"
 languageCode = "en-us"
 # theme = "hugo-theme-re-terminal"
 paginate = 5
+
+# Only for demo deploy perpous
+[module]
+[[module.mounts]]
+source = 'exampleSite/content'
+target = 'content'
+[[module.mounts]]
+source = 'exampleSite/static'
+target = 'static'
 
 [params]
 contentTypeName = "posts"

@@ -21,7 +21,7 @@ So, welcome aboard! I'm excited to have you join us on this journey as we shape 
 ![Terminal](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/images/screenshot.png?raw=true)
 
 
-~~### DEMO - https://hugo-terminal.now.sh/~~ outdated
+### DEMO - https://re-terminal.nebrowser.com/
 
 ### ⚠️ The theme needs at least Hugo **Extended** v0.129.0.
 

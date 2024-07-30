@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "re-terminal"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
