@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "tamasfe.even-better-toml",
+    "golang.go",
+    "budparr.language-hugo-vscode"
+  ]
+}
