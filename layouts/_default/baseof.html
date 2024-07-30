@@ -11,6 +11,23 @@
 
 </head>
 <body class="{{- ( or .Params.color $.Site.Params.ThemeColor ) -}}">
+{{ if .Site.Params.Banner }}
+  {{ with .Site.Params.Banner }}
+    <div id="banner">
+      <span>
+        {{ if .url }}
+          <a href="{{ .url }}">{{ .text }}</a>
+        {{ else }}
+          {{ .text }}
+        {{ end }}
+      </span>
+      {{ if .dismissible }}
+        <button type="button">x</button>
+      {{ end }}
+    </div>
+  {{ end }}
+{{ end }}
+
 {{ $container := cond ($.Site.Params.FullWidthTheme | default false) "container full" (cond ($.Site.Params.CenterTheme | default true) "container center" "container") }}
 
 <div class="{{- $container -}}{{- cond ($.Site.Params.oneHeadingSize | default true) " headings--one-size" "" }}">

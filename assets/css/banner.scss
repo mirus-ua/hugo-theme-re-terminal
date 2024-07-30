@@ -1,0 +1,23 @@
+#banner {
+  width: 100%;
+  height: 2rem;
+  display: grid;
+  grid-template-columns:  1fr auto;
+  background: $accent;
+
+  & span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & a {
+    color: #1d212c;
+    display: inline;
+  }
+
+  & > button {
+    padding: 0 5px 0 0;
+    margin: 0;
+  }
+} 

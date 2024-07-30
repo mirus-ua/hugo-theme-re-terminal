@@ -228,6 +228,15 @@ paginate = 5
   # TocTitle = "Table of Contents" # default
 
 
+  # you can set a banner on the top of the page with a call to action
+  # defaults: dismissible = false; URL is optional
+  # [params.banner]
+  # dismissible = false
+  # text = "Check it out on GitHub"
+  # url = "https://github.com/mirus-ua/hugo-theme-re-terminal"
+
+
+
 [params.twitter]
   # set Twitter handles for Twitter cards
   # see https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
