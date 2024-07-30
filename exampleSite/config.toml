@@ -1,17 +1,17 @@
 baseurl = "https://example.com/"
 languageCode = "en-us"
-theme = "hugo-theme-terminal"
+# theme = "hugo-theme-re-terminal"
 paginate = 5
 
 [params]
 contentTypeName = "posts"
-themeColor = "orange"
+themeColor = "blue"
 showMenuItems = 2
 fullWidthTheme = false
-centerTheme = false
+centerTheme = true
 
 [languages]
-[languages.en]
+[languages.en.params]
 title = "re-Terminal"
 subtitle = "A simple, retro theme for Hugo"
 keywords = ""
