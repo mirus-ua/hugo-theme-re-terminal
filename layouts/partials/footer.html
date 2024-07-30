@@ -19,5 +19,12 @@
 
 <script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
 
+<!-- Banner JS if it enabled -->
+{{ if .Site.Params.Banner }}
+  {{ $banner := resources.Get "js/banner.js" | js.Build | resources.Minify }}
+
+  <script type="text/javascript" src="{{ $banner.RelPermalink }}"></script>
+{{ end }}
+
 <!-- Extended footer section-->
 {{ partial "extended_footer.html" . }}

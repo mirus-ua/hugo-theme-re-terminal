@@ -18,6 +18,10 @@ themeColor = "blue"
 showMenuItems = 2
 fullWidthTheme = false
 centerTheme = true
+[params.banner]
+dismissible = false
+text = "Check it out on GitHub"
+url = "https://github.com/mirus-ua/hugo-theme-re-terminal"
 
 [languages]
 [languages.en.params]
