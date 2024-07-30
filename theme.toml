@@ -1,8 +1,9 @@
-name = "re-terminal"
+name = "re-Terminal"
 license = "MIT"
 licenselink = "https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/LICENSE.md"
 description = "A simple, retro theme for Hugo."
 homepage = "https://github.com/mirus-ua/hugo-theme-re-terminal/"
+demosite = "https://re-terminal.nebrowser.com"
 tags = [
   "blog",
   "clean",
@@ -24,3 +25,8 @@ min_version = 0.129
 [author]
 name = "Mirus"
 homepage = "https://nebrowser.com"
+
+[original]
+name = "panr"
+homepage = "https://radoslawkoziel.pl"
+repo = "https://github.com/panr/hugo-theme-terminal"
