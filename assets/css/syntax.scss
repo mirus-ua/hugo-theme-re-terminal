@@ -17,7 +17,7 @@ code.language-scss,
 .token.number,
 .token.inserted,
 .token.important {
-  color: $accent !important;
+  color: var(--accent) !important;
 }
 
 .token.tag-id,
@@ -34,7 +34,7 @@ code.language-scss,
 .token.class-name,
 .token.constant,
 .token.symbol {
-  color: transparentize($accent, .3) !important;
+  color: rgba(var(--accent), 0.3) !important;
 }
 
 .token.property,
@@ -44,7 +44,7 @@ code.language-scss,
 code.language-javascript,
 code.language-html,
 .command-line-prompt > span:before {
-  color: mix($accent, #999, .9) !important;
+  color: color-mix(in srgb, var(--accent) 90%, #999 10%) !important;
 }
 
 .token.selector,
@@ -75,12 +75,13 @@ pre[class*="language-"] {
 }
 
 .line-highlight {
+  --line-highlight-mix: color-mix(in srgb, var(--accent) 90%, #999 10%);
   position: absolute;
   left: 0;
   right: 0;
   padding: 0;
   margin: 0;
-  background: transparentize(mix($accent, #999, 90%), .92);
+  background: rgba(var(--line-highlight-mix), 0.92);
   pointer-events: none;
   line-height: inherit;
   white-space: pre;

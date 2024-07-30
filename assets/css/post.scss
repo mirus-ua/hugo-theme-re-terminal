@@ -3,7 +3,7 @@
 }
 
 .framed {
-  border: 1px solid $accent;
+  border: 1px solid var(--accent);
   padding: 20px;
 
   *:first-child {
@@ -26,13 +26,13 @@
   padding: 20px 0;
 
   &:not(:last-of-type) {
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid var(--border-color);
   }
 
   &-meta {
     font-size: 1rem;
     margin-bottom: 10px;
-    color: transparentize($accent, .3);
+    color: rgba(var(--accent), 0.3);
 
     & > *:not(:first-child) {
       &::before {
@@ -44,9 +44,9 @@
   }
 
   &-title {
-    $border: 3px dotted $accent;
+    $border: 3px dotted var(--accent);
     position: relative;
-    color: $accent;
+    color: var(--accent);
     margin: 0 0 15px;
     padding-bottom: 15px;
     border-bottom: $border;
@@ -81,12 +81,12 @@
   }
 
   &-cover {
-    border: 20px solid $accent;
+    border: 20px solid var(--accent);
     background: transparent;
     margin: 40px 0;
     padding: 20px;
 
-    @media ($phone) {
+    @media (var(--phone)) {
       padding: 10px;
       border-width: 10px;
     }
@@ -99,7 +99,7 @@
       content: '-';
       position: absolute;
       left: -20px;
-      color: $accent;
+      color: var(--accent);
     }
   }
 }
@@ -121,7 +121,7 @@
 }
 
 .hanchor {
-  color: transparentize($accent, .1);
+  color: rgba(var(--accent), 0.1);
   text-decoration: none;
   margin-left: 10px;
   visibility: hidden;
@@ -132,5 +132,5 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
 }
 
 .footnotes {
-  color: transparentize($color, .5);
+  color: rgba(var(--color), 0.5);
 }
