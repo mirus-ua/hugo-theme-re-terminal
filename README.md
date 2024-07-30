@@ -119,7 +119,7 @@ You can also choose **one of the 3 possibilities** to install the theme:
 # you fetch the theme module.
 #
 # hugo mod init [your website/module name]
-hugo mod get github.com/mirus-ua/hugo-theme-re-terminal/v1
+hugo mod get github.com/mirus-ua/hugo-theme-re-terminal
 ```
 
 and in your config file add:
@@ -129,7 +129,7 @@ and in your config file add:
   # this is needed when you fetch the theme as a submodule to your repo.
   # replacements = "github.com/mirus-ua/hugo-theme-re-terminal -> themes/re-terminal"
 [[module.imports]]
-  path = 'github.com/mirus-ua/hugo-theme-re-terminal/v1'
+  path = 'github.com/mirus-ua/hugo-theme-re-terminal'
 ```
 
 Keep in mind that the theme by default won't show up in the `themes` directory. This means that you are using the theme as it was on the repository at the moment you fetched it. Your local `go.sum` file keeps all the references. Read more about Hugo Modules in the [official documentation](https://gohugo.io/hugo-modules/).
