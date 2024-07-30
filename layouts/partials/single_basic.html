@@ -72,7 +72,7 @@ HERE INSERT ANY CUSTOM <script/> or <style/>
 {{ if (.Params.Toc | default .Site.Params.Toc) }}
   <div class="table-of-contents">
     <h2>
-      {{ (.Params.TocTitle | default .Site.Params.TocTitle) | default "Зміст" }}
+      {{ (.Params.TocTitle | default .Site.Params.TocTitle) | default "Table of Contents" }}
     </h2>
     {{ .TableOfContents }}
   </div>
