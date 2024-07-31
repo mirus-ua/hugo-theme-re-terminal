@@ -3,6 +3,6 @@
   align-items: center;
   text-decoration: none;
   background: var(--accent);
-  color: black;
+  color: color-mix(in srgb, var(--accent), var(--accent-contrast-color) 90%);;
   padding: 5px 10px;
 }

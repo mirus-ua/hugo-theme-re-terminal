@@ -110,7 +110,7 @@ figure {
     padding: 5px 10px;
     margin-top: 5px;
     background: var(--accent);
-    color: var(--background);
+    color: var(--accent-contrast-color);
     /* opacity: .8; */
 
     &.left {
@@ -291,7 +291,7 @@ ol {
 
 mark {
   background: var(--accent);
-  color: var(--background);
+  color: var(--accent-contrast-color);
 }
 
 .container {
