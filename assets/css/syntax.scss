@@ -17,7 +17,7 @@ code.language-scss,
 .token.number,
 .token.inserted,
 .token.important {
-  color: $accent !important;
+  color: var(--syntax-value-color, color-mix(in srgb, var(--accent), white)) !important;
 }
 
 .token.tag-id,
@@ -34,7 +34,7 @@ code.language-scss,
 .token.class-name,
 .token.constant,
 .token.symbol {
-  color: transparentize($accent, .3) !important;
+  color: var(--syntax-var-color, color-mix(in srgb, var(--accent) 90%, transparent)) !important;
 }
 
 .token.property,
@@ -44,7 +44,7 @@ code.language-scss,
 code.language-javascript,
 code.language-html,
 .command-line-prompt > span:before {
-  color: mix($accent, #999, .9) !important;
+  color: var(--syntax-func-color, color-mix(in srgb, var(--accent) 70%, #999 30%)) !important;
 }
 
 .token.selector,
@@ -75,12 +75,13 @@ pre[class*="language-"] {
 }
 
 .line-highlight {
+  --line-highlight-mix: color-mix(in srgb, var(--accent) 90%, #999 10%);
   position: absolute;
   left: 0;
   right: 0;
   padding: 0;
   margin: 0;
-  background: transparentize(mix($accent, #999, 90%), .92);
+  background: color-mix(in srgb, var(--line-highlight-mix), transparent 92%);
   pointer-events: none;
   line-height: inherit;
   white-space: pre;
@@ -116,9 +117,9 @@ pre[class*="language-"] {
 }
 
 .code-toolbar {
-  $code-margin: 40px;
+  --code-margin: 40px;
 	position: relative;
-	margin: $code-margin 0;
+	margin: var(--code-margin) 0;
 	padding: 20px;
 	border: 1px solid rgba(255, 255, 255, .1);
 
@@ -126,7 +127,7 @@ pre[class*="language-"] {
 	+ .highlight,
 	+ .highlight .code-toolbar {
 		border-top: 0;
-		margin-top: calc(-1 * $code-margin);
+		margin-top: calc(-1 * var(--code-margin));
 	}
 
 	pre, code {

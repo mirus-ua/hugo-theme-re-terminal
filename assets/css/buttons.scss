@@ -16,9 +16,9 @@ a.button {
   text-decoration: none;
   text-align: center;
   border-radius: 8;
-  border: 1px solid $accent;
-  background: $accent;
-  color: $background;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--accent-contrast-color);
   font: inherit;
   font-weight: bold;
   appearance: none;
@@ -26,7 +26,7 @@ a.button {
   outline: none;
 
   &:hover {
-    background: transparentize($accent, .1);
+    background: color-mix(in srgb, var(--accent), transparent 10%);
   }
 
   /* variants */
@@ -64,7 +64,7 @@ a.read-more:hover,
 a.read-more:active {
   display: inline-flex;
   border: none;
-  color: $accent;
+  color: var(--accent);
   background: none;
   box-shadow: none;
   padding: 0;

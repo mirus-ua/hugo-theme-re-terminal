@@ -1,7 +1,7 @@
 input, textarea, select {
   background: transparent;
-  color: $accent;
-  border: 1px solid $accent;
+  color: var(--accent);
+  border: 1px solid var(--accent);
   border-radius: 0;
   padding: 10px;
   margin: 5px 0;
@@ -9,8 +9,8 @@ input, textarea, select {
   appearance: none;
 
   &:focus, :active {
-    border-color: $color;
-    outline: 1px solid $color;
+    border-color: var(--color);
+    outline: 1px solid var(--color);
   }
 
   &:active {
@@ -19,25 +19,25 @@ input, textarea, select {
 }
 
 select {
-  background: $background;
+  background: var(--background);
 
   option {
-    background: $background;
+    background: var(--background);
   }
 }
 
 ::placeholder {
-  color: transparentize($accent, .5);
+  color: color-mix(in srgb, var(--accent), transparent 50%);
 }
 
 input {
   &[type="checkbox"] {
     vertical-align: middle;
     padding: 10px;
-    box-shadow: inset 0 0 0 3px $background;
+    box-shadow: inset 0 0 0 3px var(--background);
 
     &:checked {
-      background: $accent;
+      background: var(--accent);
     }
   }
 }

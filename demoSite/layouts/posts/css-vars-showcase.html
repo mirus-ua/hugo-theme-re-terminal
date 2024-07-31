@@ -1,0 +1,51 @@
+{{ define "head" }}
+<style>
+  .color-container {
+    background-color: var(--accent);
+    padding: 10px;
+    color: var(--accent-contrast-color)
+  }
+</style>
+{{ end }}{{ define "main" }}
+<div class="post">
+  <!-- Common header, cover, etc. -->
+  {{ partial "single_basic.html" . }}
+
+  <form oninput="accentColor.value=accentColorPicker.value">
+    <output class="color-container" name="accentColor" for="accentColorPicker">#------</output>
+    <label>
+      Pick accent color
+      <input id="accentColorPicker" name="accentColorPicker" type="color" />
+    </label>
+  </form>
+  <form oninput="accentContrastColor.value=accentContrastColorPicker.value;">
+    <output class="color-container" name="accentContrastColor" for="accentContrastColorPicker">#------</output>
+    <label>
+      Pick accent contrast color
+      <input id="accentContrastColorPicker" name="accentContrastColorPicker" type="color" />
+    </label>
+  </form>
+
+  <script defer>
+    const root = document.querySelector(':root');
+
+    const accentPicker = document.getElementById("accentColorPicker");
+    const accentListener = accentPicker.addEventListener("input", () => {
+      if (accentPicker.value) {
+        root.style.setProperty('--accent', accentPicker.value);
+      }
+    })
+
+    const accentContrastPicker = document.getElementById("accentContrastColorPicker");
+    const accentContrastListener = accentContrastPicker.addEventListener("input", () => {
+      if (accentContrastPicker.value) {
+        root.style.setProperty('--accent-contrast-color', accentContrastPicker.value);
+      }
+    }) 
+  </script>
+
+  {{ if eq .Type $.Site.Params.contentTypeName }} {{ partial
+  "posts_pagination.html" . }} {{ end }} {{ if not (.Params.hideComments |
+  default false) }} {{ partial "comments.html" . }} {{ end }}
+</div>
+{{ end }}

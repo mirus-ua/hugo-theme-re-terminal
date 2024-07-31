@@ -19,7 +19,7 @@
 
     &:after {
       content: '';
-      background: repeating-linear-gradient(90deg, $accent, $accent 2px, transparent 0, transparent 10px);
+      background: repeating-linear-gradient(90deg, var(--accent), var(--accent) 2px, transparent 0, transparent 10px);
       display: block;
       width: 100%;
       right: 10px;

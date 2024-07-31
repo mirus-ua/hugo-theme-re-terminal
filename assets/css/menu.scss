@@ -1,11 +1,11 @@
 @mixin menu {
+  --shadow-color: color-mix(in srgb, var(--background), transparent 20%);;
   display: none;
   flex-direction: column;
-  $shadow-color: transparentize($background, .2);
-  $shadow: 0 10px $shadow-color, -10px 10px $shadow-color, 10px 10px $shadow-color;
+  --shadow: 0 10px var(--shadow-color), -10px 10px var(--shadow-color), 10px 10px var(--shadow-color);
   position: absolute;
-  background: $background;
-  box-shadow: $shadow;
+  background: var(--background);
+  box-shadow: var(--shadow);
   color: white;
   border: 2px solid;
   margin: 0;
@@ -17,7 +17,7 @@
 }
 
 @mixin header-menu-trigger {
-  color: $accent;
+  color: var(--accent);
   border: 2px solid;
   margin-left: 10px;
   height: 100%;
@@ -33,7 +33,7 @@
   justify-content: space-between;
   margin: 20px 1px;
 
-  @media ($phone) {
+  @media (var(--phone)) {
     margin: 0;
   }
 
@@ -55,7 +55,7 @@
       }
     }
 
-    @media ($phone) {
+    @media (var(--phone)) {
       flex-direction: column;
       align-items: flex-start;
       padding: 0;
@@ -82,7 +82,7 @@
 
   &__trigger {
     margin-right: 0 !important;
-    color: $accent;
+    color: var(--accent);
     user-select: none;
     cursor: pointer;
   }
@@ -109,7 +109,7 @@
   }
 
   &--desktop {
-    @media ($phone) {
+    @media (var(--phone)) {
       display: none
     }
   }
@@ -119,13 +119,13 @@
       @include header-menu-trigger;
       display: none;
 
-      @media ($phone) {
+      @media (var(--phone)) {
         display: block;
       }
     }
 
     .menu__dropdown {
-      @media ($phone) {
+      @media (var(--phone)) {
         left: auto;
         right: 0;
       }
@@ -144,7 +144,7 @@
     .menu__trigger {
       @include header-menu-trigger;
 
-      @media ($phone) {
+      @media (var(--phone)) {
         display: none;
       }
     }

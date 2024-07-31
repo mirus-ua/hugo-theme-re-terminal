@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
-  background: $accent;
-  color: black;
+  background: var(--accent);
+  color: color-mix(in srgb, var(--accent), var(--accent-contrast-color) 90%);;
   padding: 5px 10px;
 }

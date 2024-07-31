@@ -3,15 +3,6 @@ languageCode = "en-us"
 # theme = "hugo-theme-re-terminal"
 paginate = 5
 
-# Only for demo deploy perpous
-[module]
-[[module.mounts]]
-source = 'exampleSite/content'
-target = 'content'
-[[module.mounts]]
-source = 'exampleSite/static'
-target = 'static'
-
 [params]
 contentTypeName = "posts"
 themeColor = "blue"
@@ -46,3 +37,25 @@ url = "/about"
 identifier = "showcase"
 name = "Showcase"
 url = "/showcase"
+
+
+# Only for demo deploy perpous
+[module]
+[[module.mounts]]
+source = 'demoSite/content'
+target = 'content'
+[[module.mounts]]
+source = 'demoSite/static'
+target = 'static'
+[[module.mounts]]
+source = 'static'
+target = 'static'
+[[module.mounts]]
+source = 'demoSite/layouts'
+target = 'layouts'
+[[module.mounts]]
+source = 'layouts'
+target = 'layouts'
+[[module.mounts]]
+source = 'archetypes'
+target = 'archetypes'

@@ -3,7 +3,7 @@
   height: 2rem;
   display: grid;
   grid-template-columns:  1fr auto;
-  background: $accent;
+  background: var(--accent);
 
   & span {
     display: flex;
@@ -12,7 +12,7 @@
   }
 
   & a {
-    color: #1d212c;
+    color: var(--accent-contrast-color);
     display: inline;
   }
 
