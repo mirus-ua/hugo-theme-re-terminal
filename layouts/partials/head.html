@@ -18,14 +18,15 @@
 {{ if and (isset .Params "color") (not (eq .Params.color "")) }}
   {{ $localColorCss := resources.Get (printf "css/color/%s.scss" .Params.color) }}
   {{ $localCss := slice $localColorCss $defaultStyles | resources.Concat (printf "css/%s-local.scss" .Params.color) }}
-  {{ $localColorStyles := $localCss | resources.ToCSS }}
+  {{ $options := dict ("transpiler" "libsass") }}
+  {{ $localColorStyles := $localCss | css.Sass $options }}
   <link rel="stylesheet" href="{{ $localColorStyles.Permalink }}">
 {{ else }}
   <!-- Theme Variables -->
-  {{ $colorCss := resources.Get (printf "css/color/%s.scss" ($.Site.Params.ThemeColor | default "orange")) }}
+  {{ $colorCss := resources.Get (printf "css/color/%s.scss" ($.Site.Params.ThemeColor | default "blue")) }}
   {{ $css := slice $colorCss $defaultStyles | resources.Concat "css/base.scss" }}
-  {{ $options := (dict "targetPath" "styles.css" "outputStyle" "compressed" "enableSourceMap" true "precision" 6 "includePaths" (slice "node_modules")) }}
-  {{ $styles := $css | resources.ToCSS $options }}
+  {{ $options := (dict "transpiler" "libsass" "targetPath" "styles.css" "outputStyle" "compressed" "enableSourceMap" true "precision" 6 "includePaths" (slice "node_modules")) }}
+  {{ $styles := $css | css.Sass $options }}
   <link rel="stylesheet" href="{{ $styles.Permalink }}">
 {{ end }}
 
