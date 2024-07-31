@@ -17,7 +17,7 @@ code.language-scss,
 .token.number,
 .token.inserted,
 .token.important {
-  color: var(--accent) !important;
+  color: var(--syntax-value-color, color-mix(in srgb, var(--accent), white)) !important;
 }
 
 .token.tag-id,
@@ -34,7 +34,7 @@ code.language-scss,
 .token.class-name,
 .token.constant,
 .token.symbol {
-  color: rgba(var(--accent), 0.3) !important;
+  color: var(--syntax-var-color, color-mix(in srgb, var(--accent) 90%, transparent)) !important;
 }
 
 .token.property,
@@ -44,7 +44,7 @@ code.language-scss,
 code.language-javascript,
 code.language-html,
 .command-line-prompt > span:before {
-  color: color-mix(in srgb, var(--accent) 90%, #999 10%) !important;
+  color: var(--syntax-func-color, color-mix(in srgb, var(--accent) 70%, #999 30%)) !important;
 }
 
 .token.selector,
