@@ -1,0 +1,32 @@
+{{ define "head" }}
+<style>
+
+</style>
+{{ end }}{{ define "main" }}
+<div class="post">
+  <!-- Common header, cover, etc. -->
+  {{ partial "single_basic.html" . }}
+
+  <form oninput="color.value=colorpicker.value">
+    <output name="color" for="colorpicker">Color</output>
+    <label>
+      Pick a color
+      <input id="colorpicker" name="colorpicker" type="color" /> 
+    </label>
+  </form>
+  
+  <script defer>
+    const picker = document.getElementById("colorpicker"); 
+    const root = document.querySelector(':root');
+    const listener = picker.addEventListener("input", () => {
+      if (picker.value) {
+        root.style.setProperty('--accent', picker.value);
+      }
+    })
+  </script>
+
+  {{ if eq .Type $.Site.Params.contentTypeName }} {{ partial
+  "posts_pagination.html" . }} {{ end }} {{ if not (.Params.hideComments |
+  default false) }} {{ partial "comments.html" . }} {{ end }}
+</div>
+{{ end }}
