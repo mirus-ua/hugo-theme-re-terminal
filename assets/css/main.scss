@@ -15,8 +15,8 @@ body {
   font-size: 1rem;
   line-height: 1.54;
   letter-spacing: -0.02em;
-  background-color: $background;
-  color: $color;
+  background-color: var(--background);
+  color: var(--color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-feature-settings: "liga", "tnum", "zero", "ss01", "locl";
@@ -24,7 +24,7 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
 
-  @media ($phone) {
+  @media (var(--phone)) {
     font-size: 1rem;
   }
 }
@@ -61,7 +61,7 @@ a {
 
   /* Waiting for a better times... */
   /* &:has(code) {
-    text-decoration-color: $accent;
+    text-decoration-color: var(--accent);
   } */
 }
 
@@ -109,8 +109,8 @@ figure {
     font-size: 14px;
     padding: 5px 10px;
     margin-top: 5px;
-    background: $accent;
-    color: $background;
+    background: var(--accent);
+    color: var(--background);
     /* opacity: .8; */
 
     &.left {
@@ -130,8 +130,8 @@ figure {
 code, kbd {
   font-family: 'Fira Code', Monaco, Consolas, Ubuntu Mono, monospace !important;
   font-feature-settings: normal;
-  background: transparentize($accent, .8);
-  color: $accent;
+  background: rgba(var(--accent), 0.8);
+  color: var(--accent);
   padding: 1px 6px;
   margin: 0 2px;
   font-size: .95rem;
@@ -157,7 +157,7 @@ pre {
     margin-top: -40px;
   }
 
-  @media ($phone) {
+  @media (var(--phone)) {
     white-space: pre-wrap;
     word-wrap: break-word;
   }
@@ -172,12 +172,12 @@ pre {
 }
 
 blockquote {
-  border-top: 1px solid $accent;
-  border-bottom: 1px solid $accent;
+  border-top: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
   margin: 40px 0;
   padding: 25px;
 
-  @media ($phone) {
+  @media (var(--phone)) {
     padding-right: 0;
   }
 
@@ -198,15 +198,15 @@ blockquote {
     display: block;
     position: absolute;
     left: -25px;
-    color: $accent;
+    color: var(--accent);
   }
 
   &.twitter-tweet {
     position: relative;
-    background: transparentize($accent, .9);
+    background: rgba(var(--accent), 0.9);
     font: inherit;
     color: inherit;
-    border: 1px solid $accent;
+    border: 1px solid var(--accent);
     padding-top: 60px;
 
     p:before {
@@ -217,12 +217,12 @@ blockquote {
       content: '> From Twitter:';
       position: absolute;
       top: 20px;
-      color: $accent;
+      color: var(--accent);
       font-weight: bold;
     }
 
     a {
-      color: $accent;
+      color: var(--accent);
     }
   }
 }
@@ -237,12 +237,12 @@ table {
 table,
 th,
 td {
-  border: 1px dashed $accent;
+  border: 1px dashed var(--accent);
   padding: 10px;
 }
 
 th {
-  color: $accent;
+  color: var(--accent);
 }
 
 ul,
@@ -254,7 +254,7 @@ ol {
     position: relative;
   }
 
-  @media ($phone) {
+  @media (var(--phone)) {
     margin-left: 20px;
   }
 }
@@ -270,7 +270,7 @@ ol {
       content: counter(li);
       position: absolute;
       right: calc(100% + 10px);
-      color: $accent;
+      color: var(--accent);
       display: inline-block;
       text-align: right;
     }
@@ -290,8 +290,8 @@ ol {
 }
 
 mark {
-  background: $accent;
-  color: $background;
+  background: var(--accent);
+  color: var(--background);
 }
 
 .container {
@@ -312,7 +312,7 @@ mark {
     max-width: 100%;
   }
 
-  @media ($phone) {
+  @media (var(--phone)) {
     padding: 20px;
   }
 
@@ -333,7 +333,7 @@ mark {
 hr {
   width: 100%;
   border: none;
-  background: $border-color;
+  background: var(--border-color);
   height: 1px;
 }
 
