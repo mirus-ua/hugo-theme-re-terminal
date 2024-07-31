@@ -4,6 +4,9 @@
 # firebase
 .firebase
 
+# mac
+**/.DS_Store
+
 ### Node ###
 # Logs
 logs
