@@ -27,7 +27,7 @@ select {
 }
 
 ::placeholder {
-  color: rgba(var(--accent), 0.5);
+  color: color-mix(in srgb, var(--accent), transparent 50%);
 }
 
 input {

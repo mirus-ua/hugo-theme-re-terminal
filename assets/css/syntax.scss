@@ -81,7 +81,7 @@ pre[class*="language-"] {
   right: 0;
   padding: 0;
   margin: 0;
-  background: rgba(var(--line-highlight-mix), 0.92);
+  background: color-mix(in srgb, var(--line-highlight-mix), transparent 92%);
   pointer-events: none;
   line-height: inherit;
   white-space: pre;

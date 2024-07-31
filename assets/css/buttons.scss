@@ -26,7 +26,7 @@ a.button {
   outline: none;
 
   &:hover {
-    background: rgba(var(--accent), 0.1);
+    background: color-mix(in srgb, var(--accent), transparent 10%);
   }
 
   /* variants */

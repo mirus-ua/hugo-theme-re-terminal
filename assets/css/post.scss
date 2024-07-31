@@ -32,7 +32,7 @@
   &-meta {
     font-size: 1rem;
     margin-bottom: 10px;
-    color: rgba(var(--accent), 0.3);
+    color: color-mix(in srgb, var(--accent), transparent 30%);;
 
     & > *:not(:first-child) {
       &::before {
@@ -121,7 +121,7 @@
 }
 
 .hanchor {
-  color: rgba(var(--accent), 0.1);
+  color: color-mix(in srgb, var(--accent), transparent 10%);
   text-decoration: none;
   margin-left: 10px;
   visibility: hidden;
@@ -132,5 +132,5 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
 }
 
 .footnotes {
-  color: rgba(var(--color), 0.5);
+  color: color-mix(in srgb, var(--accent), transparent 50%);
 }

@@ -1,5 +1,5 @@
 @mixin menu {
-  --shadow-color: rgba(var(--background), 0.2);
+  --shadow-color: color-mix(in srgb, var(--background), transparent 20%);;
   display: none;
   flex-direction: column;
   --shadow: 0 10px var(--shadow-color), -10px 10px var(--shadow-color), 10px 10px var(--shadow-color);
