@@ -6,13 +6,37 @@ cover = "img/hello.jpg"
 description = "The popular theme for Hugo Terminal is reborn in re-Terminal fork. Let's make the Radek's work continue to live"
 +++
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. **Donec quis dolor nec nunc mollis interdum vel in purus**. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
 
-> Fusce pharetra suscipit orci nec tempor. Quisque vitae sem sit amet sem mollis consequat. Sed at imperdiet lorem. Vestibulum pharetra faucibus odio, ac feugiat tellus sollicitudin at. Pellentesque varius tristique mi imperdiet dapibus. Duis orci odio, sodales lacinia venenatis sit amet, feugiat et diam.
+# Hello in a new age
 
-Sed a leo id risus venenatis vulputate non quis nulla. Aenean nisl quam, lacinia pulvinar orci sit amet, eleifend eleifend dui. Nulla tempor ligula leo, eu vehicula quam condimentum a. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla gravida tristique nunc sed semper. Morbi nec felis odio.
+You can call me Mirus and I forked the original Terminal theme for Hugo, because Radek, the original creator of the theme stop the maintenance and archived the repo. 
 
-- Sed efficitur, lacus ac scelerisque pellentesque, lectus risus dignissim nisl, fermentum semper lectus diam eget lacus.
-- Nunc ornare purus enim, id eleifend mauris vestibulum volutpat.
-- Aenean facilisis ut ipsum condimentum ultrices.
-- Fusce sed metus vulputate, lobortis purus et, finibus purus. Suspendisse quis posuere lorem. Vivamus vulputate nec risus in pulvinar.
+So I already pushed a few improvements that I did for my humble blog and I'm going to add some more features in the future, also any contribution is welcome 
+
+Below you can read the original about from Radek
+
+```text
+# Hi there
+
+My name is Radek and I'm the author of this theme.
+I made it to help you present your ideas easier.
+
+We all know how hard is to start something on the web,
+especially these days. You need to prepare a bunch of stuff,
+configure them and when that’s done — create the content.
+
+This theme is pretty basic and covers all of the essentials.
+All you have to do is start typing!
+
+The theme includes:
+
+- **5 duotone themes**,
+depending on your preferences (orange, red, blue, green, pink)
+- [**Fira Code**](https://github.com/tonsky/FiraCode)
+as default monospaced font. It's gorgeous!
+- **really nice, custom duotone** syntax highlighting based on
+[**PrismJS**](https://prismjs.com)
+- mobile friendly layout
+
+So, there you have it... enjoy!
+```
