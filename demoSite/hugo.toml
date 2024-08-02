@@ -31,7 +31,8 @@ logoHomeLink = "/"
 [languages.en.menu]
 [[langiages.en.menu.main]]
 identifier = "submenu"
-name = "Now with submenus"
+name = "Sub menus"
+weight = 10
 [[languages.en.menu.main]]
 identifier = "subabout"
 name = "About"
