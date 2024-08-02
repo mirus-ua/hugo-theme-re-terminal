@@ -2,13 +2,13 @@
 
 ## Welcome to Hugo Theme re-Terminal!
 
-Hello! I'm thrilled to announce that we've received a brand new fork of Hugo Theme re-Terminal, now officially known as Hugo Theme Re-Terminal!
+Hello! I'm thrilled to announce a brand new fork of Hugo Theme Terminal, now officially known as Hugo Theme Re-Terminal!
 
 
 As the maintainer, I'm excited to share that this theme will continue to evolve and receive updates with new features. Why? Because I use it myself! You can bet your last byte that any changes I make will be thoroughly tested and refined for real-world use.
 
 
-This fork aims to breathe new life into the original re-Terminal theme, which was once a popular choice among Hugo enthusiasts. Unfortunately, it had been neglected over time. But no more! With re-Terminal, we're committed to keeping the spirit of the original alive while adding fresh perspectives and innovations.
+This fork aims to breathe new life into the original Terminal theme, which was once a popular choice among Hugo enthusiasts. Unfortunately, it had been neglected over time. But no more! With re-Terminal, we're committed to keeping the spirit of the original alive while adding fresh perspectives and innovations.
 
 
 In the coming weeks and months, you can expect to see new features, and bug fixes. We'll also be actively seeking feedback from our community to ensure that this theme continues to meet your needs and exceed your expectations.
@@ -18,10 +18,12 @@ So, welcome aboard! I'm excited to have you join us on this journey as we shape 
 
 ----
 
-![Terminal](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/images/screenshot.png?raw=true)
+![re-Terminal](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/images/screenshot.png?raw=true)
 
 
-### DEMO - https://re-terminal.nebrowser.com/
+### DEMO and some blog posts about re-Terminal - https://re-terminal.nebrowser.com/
+
+### Visit repo's wiki (WIP) - https://github.com/mirus-ua/hugo-theme-re-terminal/wiki 
 
 ### ⚠️ The theme needs at least Hugo **Extended** v0.128.0.
 
@@ -267,6 +269,14 @@ paginate = 5
       logoHomeLink = "/"
 
     [languages.en.menu]
+      # Submenus is available since v2.1.0
+      # [[languages.en.menu.main]]
+      #   identifier = "submenuParent"
+      #   name = "Submenu"
+      # [[languages.en.menu.main]]
+      #   parent = "submenuParent"
+      #   identifier = "anItem"
+      #   name = "AnItem"
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
@@ -287,7 +297,7 @@ paginate = 5
 
 to `config.toml` file in your Hugo root directory and change params fields. In case you need, here's [a YAML version](https://gist.github.com/panr/9eeea6f595c257febdadc11763e3a6d1).
 
-**NOTE:** Please keep in mind that currently `main menu` doesn't support nesting.
+**NOTE:** Please keep in mind that `main menu` supports only one level of nesting.
 
 ## Post archetype
 
