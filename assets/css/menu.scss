@@ -87,6 +87,15 @@
     cursor: pointer;
   }
 
+  &__subdrop {
+    &--title {
+      padding: 5px;
+    }
+    &--list {
+      list-style-type: unset;
+    }
+  }
+
   &__dropdown {
     @include menu;
 

@@ -6,7 +6,7 @@ paginate = 5
 [params]
 contentTypeName = "posts"
 themeColor = "blue"
-showMenuItems = 2
+showMenuItems = 3
 fullWidthTheme = false
 centerTheme = true
 [params.banner]
@@ -29,6 +29,19 @@ logoText = "re-Terminal"
 logoHomeLink = "/"
 
 [languages.en.menu]
+[[langiages.en.menu.main]]
+identifier = "submenu"
+name = "Now with submenus"
+[[languages.en.menu.main]]
+identifier = "subabout"
+name = "About"
+url = "/about"
+parent = "submenu"
+[[languages.en.menu.main]]
+identifier = "subshowcase"
+name = "Showcase"
+url = "/showcase"
+parent = "submenu"
 [[languages.en.menu.main]]
 identifier = "about"
 name = "About"
