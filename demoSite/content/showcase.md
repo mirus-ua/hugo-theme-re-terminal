@@ -1,8 +1,9 @@
----
-title: "Showcase"
-date: "2018-07-18"
-author: "Hello Robot"
----
++++
+title= "Showcase"
+date= "2018-07-18"
+author= "Hello Robot"
+hideComments= true
++++
 
 # Features in updates
 - [native CSS variables showcase](/posts/css-vars/)

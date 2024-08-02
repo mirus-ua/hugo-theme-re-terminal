@@ -4,6 +4,7 @@ date = "2024-07-30"
 author = "Mirus"
 cover = "img/hello.jpg"
 description = "The popular theme for Hugo Terminal is reborn in re-Terminal fork. Let's make the Radek's work continue to live"
+hideComments=true
 +++
 
 

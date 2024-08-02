@@ -51,10 +51,10 @@ target = 'static'
 source = 'static'
 target = 'static'
 [[module.mounts]]
-source = 'demoSite/layouts'
+source = 'layouts'
 target = 'layouts'
 [[module.mounts]]
-source = 'layouts'
+source = 'demoSite/layouts'
 target = 'layouts'
 [[module.mounts]]
 source = 'archetypes'
