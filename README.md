@@ -23,7 +23,7 @@ So, welcome aboard! I'm excited to have you join us on this journey as we shape 
 
 ### DEMO - https://re-terminal.nebrowser.com/
 
-### ⚠️ The theme needs at least Hugo **Extended** v0.129.0.
+### ⚠️ The theme needs at least Hugo **Extended** v0.128.0.
 
 ---
 

@@ -20,7 +20,7 @@ tags = [
   "retro",
 ]
 features = ["blog", "shortcode", "syntax highlighting"]
-min_version = 0.129
+min_version = 0.128
 
 [author]
 name = "Mirus"
