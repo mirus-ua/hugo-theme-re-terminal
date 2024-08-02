@@ -26,6 +26,7 @@ So, welcome aboard! I'm excited to have you join us on this journey as we shape 
 ### Visit repo's wiki (WIP) - https://github.com/mirus-ua/hugo-theme-re-terminal/wiki 
 
 ### ⚠️ The theme needs at least Hugo **Extended** v0.128.0.
+re-Terminal before v2.1.0 may work with versions of HUGO less than v0.128.0 below to v0.90.0 if you change the min version manually in mod files, but I didn't test it
 
 ---
 
