@@ -16,6 +16,14 @@ In the coming weeks and months, you can expect to see new features, and bug fixe
 
 So, welcome aboard! I'm excited to have you join us on this journey as we shape the future of Hugo Theme re-Terminal together. Let's get started!
 
+## Changes vs original Terminal
+- removed all deprecated HUGO code
+- comments counter for pages
+- added post base primitive for more flexible pages where you can embed your code
+- site top banner, aka call to action banner
+- migrated from SCSS variable to CSS' Native, it brings super easy color customization via `style.css`
+- add submenus for the main menu
+
 ----
 
 ![re-Terminal](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/images/screenshot.png?raw=true)
