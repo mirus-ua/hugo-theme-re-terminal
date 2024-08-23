@@ -23,6 +23,7 @@ So, welcome aboard! I'm excited to have you join us on this journey as we shape 
 - site top banner, aka call to action banner
 - migrated from SCSS variable to CSS' Native, it brings super easy color customization via `style.css`
 - add submenus for the main menu
+- `coverCaption` for your article covers. Now you can add some information about the image in proper way
 
 ----
 

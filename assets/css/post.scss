@@ -134,3 +134,15 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
 .footnotes {
   color: color-mix(in srgb, var(--accent), transparent 50%);
 }
+
+figure:has(.post-cover) {
+  margin: 20px;
+
+  & > .post-cover {
+    margin: 0;
+  }
+
+  & > figcaption {
+    margin-top: 0;
+  }
+}
