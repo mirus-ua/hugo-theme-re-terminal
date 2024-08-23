@@ -29,7 +29,7 @@
       {{ end }}
     </span>
   {{ end }}
-  {{ partial "cover.html" . }}
+  {{ partial "cover.html" (dict "ctx" . "isCoverCaptionEnabled" true) }}
 
   {{ if (.Params.Toc | default .Site.Params.Toc) }}
     <div class="table-of-contents">
