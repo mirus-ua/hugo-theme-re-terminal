@@ -136,7 +136,8 @@ h1:hover a, h2:hover a, h3:hover a, h4:hover a {
 }
 
 figure:has(.post-cover) {
-  margin: 20px;
+  margin: 0 0 20px 0;
+
 
   & > .post-cover {
     margin: 0;
