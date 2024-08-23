@@ -3,6 +3,7 @@ title = "CSS Variables update"
 date = "2024-07-30"
 author = "Mirus"
 cover = "img/css-variables-update.webp"
+coverCaption = "By the way, you can add a caption for your cover"
 description = "A small demo of native CSS Variables. You can create your very own re-Terminal today!"
 layout = "css-vars-showcase"
 Toc=true

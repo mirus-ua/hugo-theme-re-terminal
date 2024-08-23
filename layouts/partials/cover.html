@@ -16,9 +16,22 @@
 {{- end -}}
 
 {{if $cover -}}
-  <!-- Cover image found -->
-  <img src="{{ $cover }}"
-    class="post-cover"
-    alt="{{ .Title | plainify | default " " }}"
-    title="{{ .Params.CoverCredit |plainify|default "Cover Image" }}" />
+  {{ if .Params.coverCaption }}
+    <figure> 
+      <!-- Cover image found -->
+      <img src="{{ $cover }}"
+      class="post-cover"
+      alt="{{ .Title | plainify | default " " }}"
+      title="{{ .Params.CoverCredit |plainify|default "Cover Image" }}" />
+      
+      <figcaption class="right">{{ .Params.coverCaption | safeHTML }}</figcaption>
+    </figure>
+  {{ else }}
+    <!-- Cover image found -->
+    <img src="{{ $cover }}"
+      class="post-cover"
+      alt="{{ .Title | plainify | default " " }}"
+      title="{{ .Params.CoverCredit |plainify|default "Cover Image" }}" />
+  {{ end }}
 {{- end }}
+
