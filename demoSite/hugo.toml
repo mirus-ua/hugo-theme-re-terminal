@@ -1,7 +1,7 @@
 baseurl = "https://re-terminal.nebrowser.com"
 languageCode = "en-us"
 # theme = "hugo-theme-re-terminal"
-paginate = 5
+pagination.pagerSize = 5
 
 [params]
   contentTypeName = "posts"
