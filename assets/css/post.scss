@@ -78,6 +78,10 @@
 
   &-content {
     margin-top: 30px;
+    
+    & a {
+      color: var(--article-link-color);
+    }
   }
 
   &-cover {

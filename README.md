@@ -40,6 +40,7 @@ re-Terminal before v2.1.0 may work with versions of HUGO less than v0.128.0 belo
 ---
 
 - [Features](#features)
+- [CSS Variable](#css-variable)
 - [Built-in shortcodes](#built-in-shortcodes)
 - [Code highlighting](#code-highlighting)
 - [How to start](#how-to-start)
@@ -60,6 +61,29 @@ re-Terminal before v2.1.0 may work with versions of HUGO less than v0.128.0 belo
 - **really nice duotone**, custom syntax highlighting based on [**PrismJS**](https://prismjs.com)
 - fully responsive
 - fully based on Hugo ecosystem (Pipes and Modules)
+
+## CSS Variables
+
+You can find all of them in the browser's page inspector, but here is the list with default values anyway:
+
+```css
+  :root {
+    --accent: #23B0FF; /* 1 of 5 basic colors */
+    --background: color-mix(in srgb, var(--accent) 2%, #1D1E28 98%); /* background color; inherit shades of the accent */
+    --accent-contrast-color: black; /* mainly uses for text on the accent backgrounds but not limited */
+    --color: white; /* text color, also some other text use the variable in color mixing */
+    --border-color: rgba(255, 255, 255, .1); /* border color */
+    --phone: "max-width: 684px"; /* phone breakpoint */
+    --tablet: "max-width: 900px"; /* tablet breakpoint */
+    --article-link-color: var(inherit); /* for you, who want to colorize your article links */
+
+    /* code syntax */
+    /* take a look at themes/re-terminal/assets/css/syntax.scss to understand in detail which color stands for */
+    --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #999 30%); 
+    --syntax-var-color: color-mix(in srgb, var(--accent) 90%, transparent);
+    --syntax-value-color: color-mix(in srgb, var(--accent), white);
+  }
+```
 
 #### Built-in shortcodes
 

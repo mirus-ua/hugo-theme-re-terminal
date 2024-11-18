@@ -41,3 +41,5 @@ as default monospaced font. It's gorgeous!
 
 So, there you have it... enjoy!
 ```
+
+[a link example](https://re-terminal.nebroeser.com)
