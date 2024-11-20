@@ -145,7 +145,7 @@ You can also choose **one of the 3 possibilities** to install the theme:
 2. as a standalone local directory
 3. as a git submodule
 
-⚠️ The theme needs at least Hugo **Extended** v0.90.x.
+⚠️ The theme needs at least Hugo **Extended** v0.128.x.
 
 ### Install theme as Hugo Module
 
