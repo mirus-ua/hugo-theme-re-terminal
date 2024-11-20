@@ -345,7 +345,7 @@ See the default `post` file params supported by the theme — https://github.com
 - **Extended Footer** — please take a look at `layouts/partials/extended_footer.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/extended_footer.html
 
 ### Low-level add-ons
-- **Post base** — Renders bare minimum of posts' content. For motivation and details take a look at https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/extended_footer.html
+- **Post base** — Renders bare minimum of posts' content. For motivation and details take a look at https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/single_basic.html
 
 ## How to edit the theme <a id="how-to-edit" />
 
