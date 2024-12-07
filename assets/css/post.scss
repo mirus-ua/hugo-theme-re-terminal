@@ -90,7 +90,7 @@
     margin: 40px 0;
     padding: 20px;
 
-    @media (var(--phone)) {
+    @media (max-width: $phone) {
       padding: 10px;
       border-width: 10px;
     }
