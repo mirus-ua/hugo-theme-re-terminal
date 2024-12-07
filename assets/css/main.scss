@@ -24,7 +24,7 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
 
-  @media (var(--phone)) {
+  @media (max-width: $phone) {
     font-size: 1rem;
   }
 }
@@ -157,7 +157,7 @@ pre {
     margin-top: -40px;
   }
 
-  @media (var(--phone)) {
+  @media (max-width: $phone) {
     white-space: pre-wrap;
     word-wrap: break-word;
   }
@@ -177,7 +177,7 @@ blockquote {
   margin: 40px 0;
   padding: 25px;
 
-  @media (var(--phone)) {
+  @media (max-width: $phone) {
     padding-right: 0;
   }
 
@@ -254,7 +254,7 @@ ol {
     position: relative;
   }
 
-  @media (var(--phone)) {
+  @media (max-width: $phone) {
     margin-left: 20px;
   }
 }
@@ -312,7 +312,7 @@ mark {
     max-width: 100%;
   }
 
-  @media (var(--phone)) {
+  @media (max-width: $phone) {
     padding: 20px;
   }
 

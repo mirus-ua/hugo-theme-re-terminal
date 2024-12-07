@@ -6,7 +6,10 @@
   --border-color: rgba(255, 255, 255, .1);
   --article-link-color: var(inherit);
 
-  /* MEDIA QUERIES */
-  --phone: "max-width: 684px";
-  --tablet: "max-width: 900px";
+  // Native CSS Variable aren't supported in a combination with MEDIA QUERIES. Wait for a new standard https://drafts.csswg.org/css-env-1/ 
+  // --phone: "max-width: 684px";
+  // --tablet: "max-width: 900px";
+
+  $phone: 684px;
+  $tablet: 900px;
 }
