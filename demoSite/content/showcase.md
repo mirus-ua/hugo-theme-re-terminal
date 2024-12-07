@@ -28,7 +28,7 @@ pre {
   font-size: 1rem;
   overflow: auto;
 
-  @media (--phone) {
+  @media ($phone) {
     white-space: pre-wrap;
     word-wrap: break-word;
   }

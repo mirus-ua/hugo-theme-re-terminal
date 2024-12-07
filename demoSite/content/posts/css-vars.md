@@ -44,14 +44,17 @@ You can find all of them in the browser's page inspector, but here is the list w
     --accent-contrast-color: black; /* mainly uses for text on the accent backgrounds but not limited */
     --color: white; /* text color, also some other text use the variable in color mixing */
     --border-color: rgba(255, 255, 255, .1); /* border color */
-    --phone: "max-width: 684px"; /* phone breakpoint */
-    --tablet: "max-width: 900px"; /* tablet breakpoint */
 
     /* code syntax */
     /* take a look at themes/re-terminal/assets/css/syntax.scss to understand in detail which color stands for */
     --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #999 30%); 
     --syntax-var-color: color-mix(in srgb, var(--accent) 90%, transparent);
     --syntax-value-color: color-mix(in srgb, var(--accent), white);
+
+    /* breakpoints */
+    /* unfortunately, native CSS variables don't support media queries, so use SCSS vars instead */
+    $phone: 684px;
+    $tablet: 900px;
   }
 ```
 
