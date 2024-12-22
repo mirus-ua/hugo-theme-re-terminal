@@ -1,3 +1,5 @@
+$centerTheme: {{ if $.Site.Params.CenterTheme }}center{{ else }}flex-start{{ end }};
+
 @import "variables";
 
 @import "font";

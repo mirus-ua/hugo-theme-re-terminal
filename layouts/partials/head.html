@@ -13,7 +13,8 @@
 
 {{ template "_internal/google_analytics.html" . }}
 
-{{ $defaultStyles := resources.Get "css/style.scss" }}
+{{ $defaultStylesTemplate := resources.Get "css/style.scss" }}
+{{ $defaultStyles := $defaultStylesTemplate | resources.ExecuteAsTemplate "main.scss" .}}
 <!-- Local Theme Variables -->
 {{ if and (isset .Params "color") (not (eq .Params.color "")) }}
   {{ $localColorCss := resources.Get (printf "css/color/%s.scss" .Params.color) }}
