@@ -2,6 +2,8 @@
   padding: 40px 0;
   flex-grow: 0;
   opacity: .5;
+  display: flex;
+  justify-content: $centerTheme;
 
   &__inner {
     display: flex;
@@ -24,9 +26,9 @@
     display: flex;
     flex-flow: row wrap;
     flex: 1;
-    align-items: center;
+    align-items: $centerTheme;
     font-size: 1rem;
-    justify-content: center;
+    justify-content: $centerTheme;
 
     &--user {
       margin: auto;
