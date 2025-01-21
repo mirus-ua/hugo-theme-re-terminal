@@ -19,7 +19,7 @@
 {{ if and (isset .Params "color") (not (eq .Params.color "")) }}
   {{ $localColorCss := resources.Get (printf "css/color/%s.scss" .Params.color) }}
   {{ $localCss := slice $localColorCss $defaultStyles | resources.Concat (printf "css/%s-local.scss" .Params.color) }}
-  {{ $options := dict ("transpiler" "libsass") }}
+  {{ $options := (dict "transpiler" "libsass") }}
   {{ $localColorStyles := $localCss | css.Sass $options }}
   <link rel="stylesheet" href="{{ $localColorStyles.Permalink }}">
 {{ else }}
