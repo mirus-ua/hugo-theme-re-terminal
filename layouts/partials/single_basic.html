@@ -63,7 +63,7 @@ HERE INSERT ANY CUSTOM <script/> or <style/>
 {{ if .Params.tags }}
 <span class="post-tags">
   {{ range .Params.tags }}
-  #<a href="{{ (urls.JoinPath "tags" (urlize .)) | absLangURL }}">{{ . }}</a>&nbsp;
+  #<a href="{{ (urls.JoinPath "tags" (urlize .) "/") | absLangURL }}">{{ . }}</a>&nbsp;
   {{ end }}
 </span>
 {{ end }}
