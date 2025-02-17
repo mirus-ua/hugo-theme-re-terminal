@@ -36,7 +36,7 @@
         {{ if .Params.tags }}
           <span class="post-tags">
             {{ range .Params.tags }}
-            #<a href="{{ (urlize (printf "tags/%s/" . )) | absLangURL }}">
+            #<a href="{{ (urls.JoinPath "tags" (urlize .) "/") | absLangURL }}">
               {{- . -}}
             </a>&nbsp;
             {{ end }}
