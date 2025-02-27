@@ -9,6 +9,7 @@ pagination.pagerSize = 5
   showMenuItems = 3
   fullWidthTheme = false
   centerTheme = true
+  readingTime = true
   [params.banner]
     dismissible = false
     text = "Check it out on GitHub"
