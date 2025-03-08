@@ -2,11 +2,12 @@
   --shadow-color: color-mix(in srgb, var(--background), transparent 20%);
   display: none;
   flex-direction: column;
-  --shadow: 0 10px var(--shadow-color), -10px 10px var(--shadow-color), 10px 10px var(--shadow-color);
+  --shadow: 0 10px var(--shadow-color), -10px 10px var(--shadow-color),
+    10px 10px var(--shadow-color);
   position: absolute;
   background: var(--background);
   box-shadow: var(--shadow);
-  color: white;
+  color: var(--menu-color);
   border: 2px solid;
   margin: 0;
   padding: 10px;
@@ -45,7 +46,7 @@
     margin: 0;
     padding: 0;
 
-    > li {
+    >li {
       flex: 0 0 auto;
       margin-bottom: 10px;
       white-space: nowrap;
@@ -91,6 +92,7 @@
     &--title {
       padding: 5px;
     }
+
     &--list {
       list-style-type: unset;
     }
@@ -103,7 +105,7 @@
       display: flex;
     }
 
-    > li {
+    >li {
       flex: 0 0 auto;
 
       &:not(:last-of-type) {
@@ -119,7 +121,7 @@
 
   &--desktop {
     @media (max-width: $phone) {
-      display: none
+      display: none;
     }
   }
 
