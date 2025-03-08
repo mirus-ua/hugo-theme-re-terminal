@@ -17,7 +17,7 @@ code.language-scss,
 .token.number,
 .token.inserted,
 .token.important {
-    color: var(--syntax-value-color, color-mix(in srgb, var(--accent), white)) !important;
+  color: var(--syntax-value-color, color-mix(in srgb, var(--accent), white)) !important;
 }
 
 .token.tag-id,
@@ -34,7 +34,7 @@ code.language-scss,
 .token.class-name,
 .token.constant,
 .token.symbol {
-    color: var(--syntax-var-color, color-mix(in srgb, var(--accent) 90%, transparent)) !important;
+  color: var(--syntax-var-color, color-mix(in srgb, var(--accent) 90%, transparent)) !important;
 }
 
 .token.property,
@@ -42,112 +42,111 @@ code.language-scss,
 .token.function-name,
 .token.deleted,
 code[class*="language-"],
-.command-line-prompt > span:before {
-    color: var(--syntax-func-color, color-mix(in srgb, var(--accent) 70%, #999 30%)) !important;
+.command-line-prompt>span:before {
+  color: var(--syntax-func-color, color-mix(in srgb, var(--accent) 70%, #999 30%)) !important;
 }
 
 .token.selector,
 .token.tag,
 .token.punctuation {
-    color: var(--syntax-punctuation-color);
+  color: var(--syntax-punctuation-color);
 }
 
 .token.comment,
 .token.prolog,
 .token.doctype,
 .token.cdata {
-    color: var(--syntax-comment-color) !important;
+  color: var(--syntax-comment-color) !important;
 }
 
 .token.namespace {
-    opacity: 0.7 !important;
+  opacity: 0.7 !important;
 }
 
 pre[data-line] {
-    position: relative;
+  position: relative;
 }
 
 pre[class*="language-"] {
-    margin: 0;
-    padding: 0;
-    overflow: auto;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
 }
 
 .line-highlight {
-    position: absolute;
-    left: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-    background: color-mix(in srgb, var(--syntax-line-highlight-mix), transparent 92%);
-    pointer-events: none;
-    line-height: inherit;
-    white-space: pre;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  background: color-mix(in srgb, var(--syntax-line-highlight-mix), transparent 92%);
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
 }
 
 .line-highlight:before,
 .line-highlight[data-end]:after {
-    content: attr(data-start);
-    position: absolute;
-    /* top: .4em; */
-    left: 0.6em;
-    min-width: 1em;
-    padding: 0 0.5em;
-    background-color: var(--syntax-line-highlight-background-color);
-    color: var(--syntax-line-highlight-color);
-    font: bold 65%/1.5 sans-serif;
-    text-align: center;
-    vertical-align: 0.3em;
-    border-radius: 999px;
-    text-shadow: none;
-    box-shadow: 0 1px var(--syntax-line-highlight-box-shadow);
+  content: attr(data-start);
+  position: absolute;
+  left: 0.6em;
+  min-width: 1em;
+  padding: 0 0.5em;
+  background-color: var(--syntax-line-highlight-background-color);
+  color: var(--syntax-line-highlight-color);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: 0.3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px var(--syntax-line-highlight-box-shadow);
 }
 
 .line-highlight[data-end]:after {
-    content: attr(data-end);
-    top: auto;
-    bottom: 0.4em;
+  content: attr(data-end);
+  top: auto;
+  bottom: 0.4em;
 }
 
 .line-numbers .line-highlight:before,
 .line-numbers .line-highlight:after {
-    content: none;
+  content: none;
 }
 
 .code-toolbar {
-    --code-margin: 40px;
-    position: relative;
-    margin: var(--code-margin) 0;
-    padding: 20px;
-    border: 1px solid var(--syntax-code-border-color);
+  --code-margin: 40px;
+  position: relative;
+  margin: var(--code-margin) 0;
+  padding: 20px;
+  border: 1px solid var(--syntax-code-border-color);
 
-    + .code-toolbar,
-    + .highlight,
-    + .highlight .code-toolbar {
-        border-top: 0;
-        margin-top: calc(-1 * var(--code-margin));
-    }
+  +.code-toolbar,
+  +.highlight,
+  +.highlight .code-toolbar {
+    border-top: 0;
+    margin-top: calc(-1 * var(--code-margin));
+  }
 
-    pre,
-    code {
-        border: none;
-    }
+  pre,
+  code {
+    border: none;
+  }
 
-    code {
-        display: block;
-        color: inherit;
-    }
+  code {
+    display: block;
+    color: inherit;
+  }
 
-    > .toolbar {
-        button {
-            font-size: 0.8em !important;
-            background: var(--syntax-code-copy-button-background) !important;
-            color: var(--syntax-code-copy-button-color) !important;
-            box-shadow: 0 2px 0 0 var(--syntax-code-copy-button-box-shadow-color) !important;
-            border-radius: 0 !important;
-            margin: 6px !important;
-            padding: 10px !important;
-            user-select: none;
-        }
+  >.toolbar {
+    button {
+      font-size: 0.8em !important;
+      background: var(--syntax-code-copy-button-background) !important;
+      color: var(--syntax-code-copy-button-color) !important;
+      box-shadow: 0 2px 0 0 var(--syntax-code-copy-button-box-shadow-color) !important;
+      border-radius: 0 !important;
+      margin: 6px !important;
+      padding: 10px !important;
+      user-select: none;
     }
+  }
 }
