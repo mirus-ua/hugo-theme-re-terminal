@@ -41,8 +41,7 @@ code.language-scss,
 .token.function,
 .token.function-name,
 .token.deleted,
-code.language-javascript,
-code.language-html,
+code[class*="language-"],
 .command-line-prompt > span:before {
     color: var(--syntax-func-color, color-mix(in srgb, var(--accent) 70%, #999 30%)) !important;
 }
