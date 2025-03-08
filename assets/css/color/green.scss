@@ -11,6 +11,7 @@
     --syntax-var-color: color-mix(in srgb, var(--accent) 90%, transparent);
     --syntax-value-color: color-mix(in srgb, var(--accent), white);
     --syntax-comment-color: rgba(255, 255, 255, 0.3);
+    --syntax-line-highlight-mix: color-mix(in srgb, var(--accent) 90%, #999 10%);
     --syntax-line-highlight-background-color: hsla(24, 20%, 50%, 0.4);
     --syntax-line-highlight-color: hsl(24, 20%, 95%);
     --syntax-line-highlight-box-shadow: white;

@@ -75,13 +75,12 @@ pre[class*="language-"] {
 }
 
 .line-highlight {
-    --line-highlight-mix: color-mix(in srgb, var(--accent) 90%, #999 10%);
     position: absolute;
     left: 0;
     right: 0;
     padding: 0;
     margin: 0;
-    background: color-mix(in srgb, var(--line-highlight-mix), transparent 92%);
+    background: color-mix(in srgb, var(--syntax-line-highlight-mix), transparent 92%);
     pointer-events: none;
     line-height: inherit;
     white-space: pre;
