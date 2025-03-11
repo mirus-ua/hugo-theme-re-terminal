@@ -1,24 +1,3 @@
-:root {
+html:root {
   --accent: #1d1e28;
-  --accent-contrast-color: white;
-  --article-link-color: var(inherit);
-  --background: color-mix(in srgb, var(--accent) 2%, #fefcfa 98%);
-  --border-color: rgba(0, 0, 0, 0.1);
-  --color: black;
-  --menu-color: black;
-
-  // Use in code syntax highlighting
-  --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #000 30%);
-  --syntax-var-color: color-mix(in srgb, var(--accent) 90%, #000);
-  --syntax-value-color: color-mix(in srgb, var(--accent), black);
-  --syntax-punctuation-color: black;
-  --syntax-comment-color: rgba(0, 0, 0, 0.3);
-  --syntax-line-highlight-mix: color-mix(in srgb, var(--accent) 90%, #000 10%);
-  --syntax-line-highlight-background-color: hsla(336, 20%, 50%, 0.4);
-  --syntax-line-highlight-color: hsl(336, 20%, 95%);
-  --syntax-line-highlight-box-shadow: black;
-  --syntax-code-border-color: rgba(0, 0, 0, 0.1);
-  --syntax-code-copy-button-background: hsla(360, 0%, 87.8%, 0.2);
-  --syntax-code-copy-button-color: #444;
-  --syntax-code-copy-button-box-shadow-color: rgba(255, 255, 255, 0.2);
 }
