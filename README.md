@@ -4,19 +4,16 @@
 
 Hello! I'm thrilled to announce a brand new fork of Hugo Theme Terminal, now officially known as Hugo Theme Re-Terminal!
 
-
 As the maintainer, I'm excited to share that this theme will continue to evolve and receive updates with new features. Why? Because I use it myself! You can bet your last byte that any changes I make will be thoroughly tested and refined for real-world use.
-
 
 This fork aims to breathe new life into the original Terminal theme, which was once a popular choice among Hugo enthusiasts. Unfortunately, it had been neglected over time. But no more! With re-Terminal, we're committed to keeping the spirit of the original alive while adding fresh perspectives and innovations.
 
-
 In the coming weeks and months, you can expect to see new features, and bug fixes. We'll also be actively seeking feedback from our community to ensure that this theme continues to meet your needs and exceed your expectations.
-
 
 So, welcome aboard! I'm excited to have you join us on this journey as we shape the future of Hugo Theme re-Terminal together. Let's get started!
 
 ## Changes vs original Terminal
+
 - removed all deprecated HUGO code
 - comments counter for pages
 - added post base primitive for more flexible pages where you can embed your code
@@ -25,16 +22,16 @@ So, welcome aboard! I'm excited to have you join us on this journey as we shape 
 - add submenus for the main menu
 - `coverCaption` for your article covers. Now you can add some information about the image in proper way
 
-----
+---
 
 ![re-Terminal](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/images/screenshot.png?raw=true)
 
-
 ### DEMO and some blog posts about re-Terminal - https://re-terminal.nebrowser.com/
 
-### Visit repo's wiki (WIP) - https://github.com/mirus-ua/hugo-theme-re-terminal/wiki 
+### Visit repo's wiki (WIP) - https://github.com/mirus-ua/hugo-theme-re-terminal/wiki
 
 ### ⚠️ The theme needs at least Hugo **Extended** v0.128.0.
+
 re-Terminal before v2.1.0 may work with versions of HUGO less than v0.128.0 below to v0.90.0 if you change the min version manually in mod files, but I didn't test it
 
 ---
@@ -56,7 +53,7 @@ re-Terminal before v2.1.0 may work with versions of HUGO less than v0.128.0 belo
 
 ## Features
 
-- **5 duotone themes**, depending on your preferences (blue is default, red, orange, green, pink)
+- **6 duotone themes**, depending on your preferences (blue is default, red, orange, green, pink, paper)
 - [**Fira Code**](https://github.com/tonsky/FiraCode) as default monospaced font. It's gorgeous!
 - **really nice duotone**, custom syntax highlighting based on [**PrismJS**](https://prismjs.com)
 - fully responsive
@@ -67,6 +64,7 @@ re-Terminal before v2.1.0 may work with versions of HUGO less than v0.128.0 belo
 You can find all of them in the browser's page inspector, but here is the list with default values anyway:
 
 ```css
+  /* the colors are from dark pallets; light themes have different defaults */
   :root {
     --accent: #23B0FF; /* 1 of 5 basic colors */
     --background: color-mix(in srgb, var(--accent) 2%, #1D1E28 98%); /* background color; inherit shades of the accent */
@@ -74,13 +72,14 @@ You can find all of them in the browser's page inspector, but here is the list w
     --color: white; /* text color, also some other text use the variable in color mixing */
     --border-color: rgba(255, 255, 255, .1); /* border color */
     --article-link-color: var(inherit); /* for you, who want to colorize your article links */
+    --menu-color: blackl /* a variable for menus color */
 
     /* code syntax */
     /* take a look at themes/re-terminal/assets/css/syntax.scss to understand in detail which color stands for */
     --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #999 30%); 
     --syntax-var-color: color-mix(in srgb, var(--accent) 90%, transparent);
     --syntax-value-color: color-mix(in srgb, var(--accent), white);
-    
+  
     /* breakpoints */
     /* unfortunately, native CSS variables don't support media queries, so use SCSS vars instead */
     $phone: 684px;
@@ -92,16 +91,19 @@ You can find all of them in the browser's page inspector, but here is the list w
 
 - **`image`** (props required: **`src`**; props optional: **`alt`**, **`position`** (**left** is default | center | right), **`style`**)
   - e.g.
+
   ```go
   {{< image src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" >}}
   ```
 - **`figure`** (same as `image`, plus few optional props: **`caption`**, **`captionPosition`** (left | **center** is default | right), **`captionStyle`**)
   - e.g.
+
   ```go
   {{< figure src="/img/hello.png" alt="Hello Friend" position="center" style="border-radius: 8px;" caption="Hello Friend!" captionPosition="right" captionStyle="color: red;" >}}
   ```
 - **`code`** (props required: **`language`**; props optional: **`title`**, **`id`**, **`expand`** (default "△"), **`collapse`** (default "▽"), **`isCollapsed`**)
   - e.g.
+
   ```go
   {{< code language="css" title="Really cool snippet" id="1" expand="Show" collapse="Hide" isCollapsed="true" >}}
   pre {
@@ -222,7 +224,7 @@ pagination.pagerSize = 5
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
 
-  # ["orange", "blue", "red", "green", "pink"]
+  # ["orange", "blue", "red", "green", "pink", "paper"]
   themeColor = "orange"
 
   # if you set this to 0, only submenu trigger will be visible
@@ -348,19 +350,20 @@ See the default `post` file params supported by the theme — https://github.com
 - **Extended Footer** — please take a look at `layouts/partials/extended_footer.html` https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/extended_footer.html
 
 ### Low-level add-ons
+
 - **Post base** — Renders bare minimum of posts' content. For motivation and details take a look at https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/layouts/partials/single_basic.html
 
-## How to edit the theme <a id="how-to-edit" />
+## How to edit the theme `<a id="how-to-edit" />`
 
 If you are using as a remote Hugo Module (you don't have the theme files in the `theme/re-terminal`) and you have to override only some of the styles, you can do this easily by adding `static/style.css` in your root directory and point things you want to change.
 
 If you have the theme files in the theme directory, then you can directly edit anything in the theme, you just have to go to `themes/re-terminal` and modify the files. No compilation step needed.
 
-## Found a bug? <a id="bug" />
+## Found a bug? `<a id="bug" />`
 
 If you spot any bugs, please use [Issue Tracker](https://github.com/mirus-ua/hugo-theme-re-terminal/issues) or create a new [Pull Request](https://github.com/mirus-ua/hugo-theme-re-terminal/pulls) to fix the issue.
 
-## New cool idea or feature? <a id="feature" />
+## New cool idea or feature? `<a id="feature" />`
 
 The theme is in constant development since 2019 and has got many cool features that helped many of you and made the theme better. But there were also many features that I wasn't sure about because I want to keep the theme as simple as possible.
 
@@ -380,7 +383,6 @@ Sounds OK? Cool, let's rock! 🤘
 ## re-Terminal theme user?
 
 I'd be happy to know more about you and what you are doing. If you want to share it, please make a contribution and [add your site to the list](https://github.com/mirus-ua/hugo-theme-re-terminal/blob/main/USERS.md)! 🤗
-
 
 ## License
 
