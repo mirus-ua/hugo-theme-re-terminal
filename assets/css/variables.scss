@@ -1,15 +1,29 @@
 :root {
-  /* COLOR VARIABLES */
-  --background: color-mix(in srgb, var(--accent) 2%, #1D1E28 98%);
   --accent-contrast-color: black;
-  --color: white;
-  --border-color: rgba(255, 255, 255, .1);
   --article-link-color: var(inherit);
+  --background: color-mix(in srgb, var(--accent) 2%, #1d1e28 98%);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --color: white;
+  --menu-color: white;
+
+  // Use in code syntax highlighting
+  --syntax-func-color: color-mix(in srgb, var(--accent) 70%, #999 30%);
+  --syntax-var-color: color-mix(in srgb, var(--accent) 90%, transparent);
+  --syntax-punctuation-color: white;
+  --syntax-value-color: color-mix(in srgb, var(--accent), white);
+  --syntax-comment-color: rgba(255, 255, 255, 0.3);
+  --syntax-line-highlight-mix: color-mix(in srgb, var(--accent) 90%, #999 10%);
+  --syntax-line-highlight-background-color: hsla(24, 20%, 50%, 0.4);
+  --syntax-line-highlight-color: hsl(24, 20%, 95%);
+  --syntax-line-highlight-box-shadow: white;
+  --syntax-code-border-color: rgba(255, 255, 255, 0.1);
+  --syntax-code-copy-button-background: hsla(0, 0%, 87.8%, 0.2);
+  --syntax-code-copy-button-color: #bbb;
+  --syntax-code-copy-button-box-shadow-color: rgba(0, 0, 0, 0.2);
 }
 
-// Native CSS Variable aren't supported in a combination with MEDIA QUERIES. Wait for a new standard https://drafts.csswg.org/css-env-1/ 
+// Native CSS Variable aren't supported in a combination with MEDIA QUERIES. Wait for a new standard https://drafts.csswg.org/css-env-1/
 // --phone: "max-width: 684px";
 // --tablet: "max-width: 900px";
-
 $phone: 684px;
 $tablet: 900px;
