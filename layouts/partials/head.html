@@ -16,15 +16,24 @@
 {{ $defaultStylesTemplate := resources.Get "css/style.scss" }}
 {{ $defaultStyles := $defaultStylesTemplate | resources.ExecuteAsTemplate "main.scss" .}}
 <!-- Local Theme Variables -->
+{{ $.Scratch.Set "color" "orange" }}
 {{ if and (isset .Params "color") (not (eq .Params.color "")) }}
-  {{ $localColorCss := resources.Get (printf "css/color/%s.scss" .Params.color) }}
+  {{ $color := strings.TrimSuffix "-light" .Params.color }}
+  {{ $color := strings.TrimSuffix "-dark" $color }}
+  {{ $color := strings.TrimSuffix "-dynamic" $color }}
+  {{ $.Scratch.Set "color" $color }}
+  {{ $localColorCss := resources.Get (printf "css/color/%s.scss" $color) }}
   {{ $localCss := slice $localColorCss $defaultStyles | resources.Concat (printf "css/%s-local.scss" .Params.color) }}
   {{ $options := (dict "transpiler" "libsass") }}
   {{ $localColorStyles := $localCss | css.Sass $options }}
   <link rel="stylesheet" href="{{ $localColorStyles.Permalink }}">
 {{ else }}
   <!-- Theme Variables -->
-  {{ $colorCss := resources.Get (printf "css/color/%s.scss" ($.Site.Params.ThemeColor | default "blue")) }}
+  {{ $color := strings.TrimSuffix "-light" $.Site.Params.ThemeColor }}
+  {{ $color := strings.TrimSuffix "-dark" $color }}
+  {{ $color := strings.TrimSuffix "-dynamic" $color }}
+  {{ $.Scratch.Set "color" $color }}
+  {{ $colorCss := resources.Get (printf "css/color/%s.scss" $color) }}
   {{ $css := slice $colorCss $defaultStyles | resources.Concat "css/base.scss" }}
   {{ $options := (dict "transpiler" "libsass" "targetPath" "styles.css" "outputStyle" "compressed" "enableSourceMap" true "precision" 6 "includePaths" (slice "node_modules")) }}
   {{ $styles := $css | css.Sass $options }}
@@ -40,8 +49,8 @@
 {{ if isset $.Site.Params "favicon" }}
   <link rel="shortcut icon" href="{{ $.Site.Params.favicon | absURL }}">
 {{ else }}
-  <link rel="shortcut icon" href="{{ printf "img/theme-colors/%s.png" (or .Params.color $.Site.Params.ThemeColor | default "orange") | absURL }}">
-  <link rel="apple-touch-icon" href="{{ printf "img/theme-colors/%s.png" (or .Params.color $.Site.Params.ThemeColor | default "orange") | absURL }}">
+  <link rel="shortcut icon" href="{{ printf "img/theme-colors/%s.png" (or .Params.color ($.Scratch.Get "color")) | absURL }}">
+  <link rel="apple-touch-icon" href="{{ printf "img/theme-colors/%s.png" (or .Params.color ($.Scratch.Get "color")) | absURL }}">
 {{ end }}
 
 <!-- Twitter Card -->
@@ -70,7 +79,7 @@
   {{ if isset $.Site.Params "favicon" }}
     <meta property="og:image" content="{{ $.Site.Params.favicon | absURL }}">
   {{ else }}
-    <meta property="og:image" content="{{ printf "img/favicon/%s.png" $.Site.Params.ThemeColor | absURL }}">
+    <meta property="og:image" content="{{ printf "img/favicon/%s.png" ($.Scratch.Get "color") | absURL }}">
   {{ end }}
 {{ end }}
 <meta property="og:image:width" content="1200">
