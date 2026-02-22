@@ -100,6 +100,7 @@
 
   &__dropdown {
     @include menu;
+    color: var(--accent);
 
     .open & {
       display: flex;
