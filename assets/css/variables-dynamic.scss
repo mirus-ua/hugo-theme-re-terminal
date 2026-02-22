@@ -1,0 +1,5 @@
+@import "variables-light";
+
+@media (prefers-color-scheme: dark) {
+  @import "variables-dark";
+}

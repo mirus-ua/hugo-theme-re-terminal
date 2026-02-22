@@ -224,8 +224,13 @@ pagination.pagerSize = 5
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
 
+  # any of the colors:
   # ["orange", "blue", "red", "green", "pink", "paper"]
-  themeColor = "orange"
+  # combined with:
+  # * "-dark" for a dark theme
+  # * "-light" for a light theme
+  # * "-dynamic" for a theme that adapts to the browser settings
+  themeColor = "orange-dynamic"
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2
