@@ -46,10 +46,12 @@ HERE INSERT ANY CUSTOM <script/> or <style/>
   {{ end }}
   {{ with .Params }}
     <span class="post-author">
-      {{ if .AuthorTwitter }}
-      <a href="https://x.com/@{{ .AuthorTwitter }}" target="_blank">{{ .Author }}</a>
+      {{ if .author_url }}
+        <a href="{{ .author_url }}" target="_blank">{{ .Author }}</a>
+      {{ else if .AuthorTwitter }}
+        <a href="https://x.com/@{{ .AuthorTwitter }}" target="_blank">{{ .Author }}</a>
       {{ else }}
-      {{ .Author }}
+        {{ .Author }}
       {{ end }}
     </span>
   {{ end }}

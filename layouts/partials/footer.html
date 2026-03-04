@@ -14,8 +14,14 @@
 
 {{ $menu := resources.Get "js/menu.js" | js.Build }}
 {{ $prism := resources.Get "js/prism.js" | js.Build }}
+{{ $themeSwitcher := resources.Get "js/theme-switcher.js" | js.Build }}
 
-{{ $bundle := slice $menu $prism | resources.Concat "bundle.js" | resources.Minify }}
+{{ $bundle := slice $menu $prism $themeSwitcher | resources.Concat "bundle.js" | resources.Minify }}
+
+<!-- Inject theme list for JavaScript -->
+<script type="text/javascript">
+  window.THEME_LIST = {{ $.Site.Params.themeList | default (slice "darkpaper" "paper" "blue" "green" "orange" "pink" "red") | jsonify }};
+</script>
 
 <script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
 
