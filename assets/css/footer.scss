@@ -8,9 +8,9 @@
   &__inner {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
-    width: 760px;
+    width: 100%;
     max-width: 100%;
 
     @media (max-width: $tablet) {
@@ -31,8 +31,10 @@
     justify-content: $centerTheme;
 
     &--user {
-      margin: auto;
+      margin: 0 auto;
       text-align: center;
+      justify-content: center;
+      width: 100%;
     }
 
     & > *:first-child:not(:only-child) {

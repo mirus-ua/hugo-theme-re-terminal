@@ -53,7 +53,7 @@ re-Terminal before v2.1.0 may work with versions of HUGO less than v0.128.0 belo
 
 ## Features
 
-- **6 duotone themes**, depending on your preferences (blue is default, red, orange, green, pink, paper)
+- **7 duotone themes**, depending on your preferences (blue is default, red, orange, green, pink, paper, darkpaper)
 - [**Fira Code**](https://github.com/tonsky/FiraCode) as default monospaced font. It's gorgeous!
 - **really nice duotone**, custom syntax highlighting based on [**PrismJS**](https://prismjs.com)
 - fully responsive
@@ -224,8 +224,12 @@ pagination.pagerSize = 5
   # the list of set content will show up on your index page (baseurl).
   contentTypeName = "posts"
 
-  # ["orange", "blue", "red", "green", "pink", "paper"]
+  # ["orange", "blue", "red", "green", "pink", "paper", "darkpaper"]
   themeColor = "orange"
+
+  # Custom Google Font (optional)
+  # GoogleFont = "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700"
+  # GoogleFontFamily = "IBM Plex Mono" # The actual font family name
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 2

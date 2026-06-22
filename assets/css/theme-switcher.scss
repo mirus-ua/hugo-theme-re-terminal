@@ -1,0 +1,68 @@
+.theme-switcher {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  
+  &__button {
+    background-color: var(--background);
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    border-radius: 0;
+    padding: 10px 14px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    
+    &:hover {
+      background-color: var(--accent);
+      color: var(--accent-contrast-color);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+    
+    &:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .icon {
+      display: inline-block;
+      
+      &::before {
+        content: "◐";
+        font-size: 16px;
+        line-height: 1;
+      }
+    }
+    
+    .text {
+      font-size: 0.75rem;
+      min-width: 60px;
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: $phone) {
+    bottom: 15px;
+    right: 15px;
+    
+    &__button {
+      padding: 8px 10px;
+      font-size: 0.75rem;
+      
+      .text {
+        font-size: 0.7rem;
+        min-width: 50px;
+      }
+    }
+  }
+}

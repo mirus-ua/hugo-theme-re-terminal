@@ -12,8 +12,16 @@
         {{- end -}}
       </time>
     {{- end -}}
-    {{- with .Params.Author -}}
-      <span class="post-author">{{ . }}</span>
+    {{- with .Params -}}
+      <span class="post-author">
+        {{- if .author_url -}}
+          <a href="{{ .author_url }}" target="_blank">{{ .Author }}</a>
+        {{- else if .AuthorTwitter -}}
+          <a href="https://x.com/@{{ .AuthorTwitter }}" target="_blank">{{ .Author }}</a>
+        {{- else -}}
+          {{ .Author }}
+        {{- end -}}
+      </span>
     {{- end -}}
     <!-- comments counter -->
     {{ partial "comments_counter.html" . }}
