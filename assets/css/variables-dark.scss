@@ -1,4 +1,5 @@
 :root {
+  --accent: var(--accent-dark);
   --accent-contrast-color: black;
   --article-link-color: var(inherit);
   --background: color-mix(in srgb, var(--accent) 2%, #1d1e28 98%);
